@@ -1,5 +1,5 @@
-# l6adt_advProg_jan26_codeReview
-Scenario and code to be used for the Code Review aspect of the ADT Advanced Programming assessment (Jan26 term)
+# l6adt_advProg_codeReview
+Scenario and code to be used for the Code Review aspect of the ADT Advanced Programming assessment
 
 Scenario:
 You work for an independent software engineering business. A small local printing business requires a mechanism for customers to be able to leave feedback about their staff, and they have approached your company, requesting an early prototype of a software solution.  They have asked that this be a web application/page, with the intention that eventually this facility could be added to their company website.
