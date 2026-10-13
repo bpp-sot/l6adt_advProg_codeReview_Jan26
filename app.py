@@ -16,14 +16,13 @@ def Load():
     try:
         return json.loads(open(theFile, "r").read())
     except:
-        return []  # silence ALL errors (awful)
+        return []  
 
 
 def save_feedback(d):
     f = open(theFile, "w")
     f.write(json.dumps(d, indent=4))
     f.close()
-
 
 
 
@@ -36,7 +35,7 @@ def index_page():
 # POST new feedback
 @app.route("/feedback", methods=["POST"])
 def add_fb():
-    # BAD variable names
+    
     js = request.get_json()
     if not js:
         js = {}
@@ -45,7 +44,7 @@ def add_fb():
     if "name" not in js and "email" not in js and "rating" not in js and "comments" not in js:
         return jsonify({"absent": "missing data"}), 400
 
-    #fb1 = Load()
+    
     with open(theFile, "r") as zz:
         bigList = json.load(zz)
 
